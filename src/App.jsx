@@ -57,11 +57,14 @@ export default function App() {
         <div className={styles.debit_card_container}>
           <h4>My Debit Card</h4>
           <div className={styles.debit_card}>
-            <p>BankFlow</p>
+            <div className={styles.chip}></div>
             <p>12335634567467</p>
-            <span>Solomon Israel</span>
+
+            <div className={styles.card_details}>
+              <p>BankFlow</p>
+              <span>Solomon Israel</span>
+            </div>
           </div>
-          <span>View Card</span>
         </div>
       </section>
     </div>

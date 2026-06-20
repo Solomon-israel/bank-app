@@ -104,3 +104,37 @@ body {
 .balance_cards:nth-child(3) {
   background-color: hsl(300, 100%, 25%);
 }
+
+/* .debit_card_container{
+  display: flex;
+  gap: 10px;
+  line-height: 30px;
+} */
+
+.debit_card {
+  width: 320px;
+  height: 190px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  color: white;
+}
+
+.chip {
+  width: 50px;
+  height: 40px;
+  background: gold;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.card-number {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
