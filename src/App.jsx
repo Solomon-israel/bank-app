@@ -36,19 +36,19 @@ export default function App() {
         <div className={styles.balance_cards_container}>
           <div className={styles.balance_cards}>
             <p>Current Balance</p>
-            <span className={styles.balance_cards_amount}>$250,000.00</span>
+            <span className={styles.balance_cards_amount}>$250,000</span>
             <p>Naira Account</p>
             <BiHome className={styles.balance_cards_icon} />
           </div>
           <div className={styles.balance_cards}>
             <p>Savings Balance</p>
-            <span className={styles.balance_cards_amount}>$80,000.00</span>
+            <span className={styles.balance_cards_amount}>$80,000</span>
             <p>Naira Savings</p>
             <PiPiggyBank className={styles.balance_cards_icon} />
           </div>
           <div className={styles.balance_cards}>
             <p>Total Income</p>
-            <span className={styles.balance_cards_amount}>$320,000.00</span>
+            <span className={styles.balance_cards_amount}>$320,000</span>
             <p>This Month</p>
             <BiChart className={styles.balance_cards_icon} />
           </div>
