@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.icon {
+  /* width: 90px; */
+  font-size: 20px;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.container {
+  padding: 1rem;
+}
+
+/* HEADER */
+
+.header {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* HEADER LEFT */
+.header_left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo_icon {
+  color: blue;
+  font-size: 30px;
+}
+
+.logo h3 {
+  font-weight: 500;
+  font-size: small;
+}
+
+/* HEADER RIGHT */
+.header_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.balance_cards_container {
+  max-width: 90vw;
+  display: flex;
+  gap: 5px;
+}
+
+.balance_cards {
+  background-color: hsl(240, 64%, 53%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.balance_cards span{
+  font-size: 15px;
+  /* margin-bottom: 20px; */
+}
+
+.balance_cards_amount {
+  font-size: 20px;
+}
+
+.balance_cards_icon {
+  margin-left: 90%;
+  font-size: 20px;
+}
+
+.debit_card_container {
+  display: flex;
+}
