@@ -23,6 +23,9 @@ export default function App() {
 
         <div className={styles.header_right}>
           <MdNotificationAdd />
+          <div className={styles.user_image}>
+            <img src="/user-image.png" alt="user" />
+          </div>
           <p>Solomon Israel</p>
         </div>
       </section>
@@ -42,7 +45,7 @@ export default function App() {
             </div>
             <p className={styles.acct_num}>$123456789</p>
             <span>Naira Account</span>
-            <BiHome className={styles.balance_card_icon} />
+            <BiHome className={styles.balance_cards_icon} />
           </div>
 
           <div className={`${styles.balance_cards} ${styles.card_two}`}>
@@ -52,7 +55,7 @@ export default function App() {
             </div>
             <p className={styles.acct_num}>$123456789</p>
             <span>Naira Account</span>
-            <BiHome className={styles.balance_card_icon} />
+            <PiPiggyBank className={styles.balance_cards_icon} />
           </div>
 
           <div className={`${styles.balance_cards} ${styles.card_three}`}>
@@ -62,20 +65,18 @@ export default function App() {
             </div>
             <p className={styles.acct_num}>$123456789</p>
             <span>Naira Account</span>
-            <BiHome className={styles.balance_card_icon} />
+            <BiChart className={styles.balance_cards_icon} />
           </div>
 
           {/* <div className={styles.balance_cards}>
             <p>Savings Balance</p>
             <span className={styles.balance_cards_amount}>$80,000</span>
             <p>Naira Savings</p>
-            <PiPiggyBank className={styles.balance_cards_icon} />
           </div> */}
           {/* <div className={styles.balance_cards}>
             <p>Total Income</p>
             <span className={styles.balance_cards_amount}>$320,000</span>
             <p>This Month</p>
-            <BiChart className={styles.balance_cards_icon} />
           </div> */}
         </div>
 
