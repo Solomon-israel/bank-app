@@ -5,6 +5,7 @@ import { MdNotificationAdd, MdNoTransfer, MdSavings } from "react-icons/md";
 import { BsEyeFill } from "react-icons/bs";
 import { BiChart, BiHome } from "react-icons/bi";
 import { PiPiggyBank } from "react-icons/pi";
+import { LuNfc } from "react-icons/lu";
 
 export default function App() {
   return (
@@ -34,35 +35,64 @@ export default function App() {
         </div>
 
         <div className={styles.balance_cards_container}>
-          <div className={styles.balance_cards}>
-            <p>Current Balance</p>
-            <span className={styles.balance_cards_amount}>$250,000</span>
-            <p>Naira Account</p>
-            <BiHome className={styles.balance_cards_icon} />
+          <div className={`${styles.balance_cards} ${styles.card_one}`}>
+            <div className={styles.balance_card_top}>
+              <p>Current Balance</p>
+              <BsEyeFill />
+            </div>
+            <p className={styles.acct_num}>$123456789</p>
+            <span>Naira Account</span>
+            <BiHome className={styles.balance_card_icon} />
           </div>
-          <div className={styles.balance_cards}>
+
+          <div className={`${styles.balance_cards} ${styles.card_two}`}>
+            <div className={styles.balance_card_top}>
+              <p>Current Balance</p>
+              <BsEyeFill />
+            </div>
+            <p className={styles.acct_num}>$123456789</p>
+            <span>Naira Account</span>
+            <BiHome className={styles.balance_card_icon} />
+          </div>
+
+          <div className={`${styles.balance_cards} ${styles.card_three}`}>
+            <div className={styles.balance_card_top}>
+              <p>Current Balance</p>
+              <BsEyeFill />
+            </div>
+            <p className={styles.acct_num}>$123456789</p>
+            <span>Naira Account</span>
+            <BiHome className={styles.balance_card_icon} />
+          </div>
+
+          {/* <div className={styles.balance_cards}>
             <p>Savings Balance</p>
             <span className={styles.balance_cards_amount}>$80,000</span>
             <p>Naira Savings</p>
             <PiPiggyBank className={styles.balance_cards_icon} />
-          </div>
-          <div className={styles.balance_cards}>
+          </div> */}
+          {/* <div className={styles.balance_cards}>
             <p>Total Income</p>
             <span className={styles.balance_cards_amount}>$320,000</span>
             <p>This Month</p>
             <BiChart className={styles.balance_cards_icon} />
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.debit_card_container}>
-          <h4>My Debit Card</h4>
-          <div className={styles.debit_card}>
-            <div className={styles.chip}></div>
-            <p>12335634567467</p>
+          <div className={styles.card}>
+            <div className={styles.card_top}>
+              <h3>BankFlow</h3>
+              <LuNfc className={styles.nfc} />
+            </div>
 
-            <div className={styles.card_details}>
-              <p>BankFlow</p>
+            <div className={styles.chip}></div>
+
+            <p className={styles.card_num}>1234 5678 9012 3456</p>
+
+            <div className={styles.card_bottom}>
               <span>Solomon Israel</span>
+              <h2>VISA</h2>
             </div>
           </div>
         </div>
