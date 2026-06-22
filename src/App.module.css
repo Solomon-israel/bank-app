@@ -59,19 +59,12 @@ body {
 .header_right {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 
-.notification_bell{
+.notification_bell {
   font-size: 25px;
-}
-
-.user_image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
+  color: hsl(240, 64%, 53%);
 }
 
 /* CARDS */
