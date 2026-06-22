@@ -31,7 +31,10 @@ export default function App() {
 
         <div className={styles.header_right}>
           <MdNotifications className={styles.notification_bell} />
-          <p>Israel</p>
+          <div className={styles.user_image}>
+            <img src="/user-image.png" alt="user" />
+          </div>
+          <p> Israel</p>
         </div>
       </section>
 
@@ -39,7 +42,7 @@ export default function App() {
       <section className={styles.cards}>
         <div className={styles.card_text}>
           <span>Welcome back,</span>
-          <h3>Israel 👋</h3>
+          <h3>Solomon Israel 👋</h3>
         </div>
 
         <div className={styles.balance_cards_container}>
