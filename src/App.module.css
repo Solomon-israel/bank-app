@@ -71,6 +71,9 @@ body {
 }
 
 /* CARDS */
+.cards {
+  margin-bottom: 1rem;
+}
 
 .balance_cards_container {
   display: flex;
@@ -125,53 +128,6 @@ body {
   background: linear-gradient(to top right, #581c87, #9333ea, #c084fc);
 }
 
-/* CARDS */
-/* .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.balance_cards_container {
-  max-width: 90vw;
-  display: flex;
-  gap: 5px;
-}
-
-.balance_cards {
-  background-color: hsl(240, 64%, 53%);
-  color: hsl(0, 0%, 100%);
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  flex: 1;
-}
-
-.balance_cards span {
-  font-size: 15px;
-}
-
-.balance_cards_amount {
-  font-size: 20px;
-}
-
-.balance_cards_icon {
-  margin-left: 90%;
-  font-size: 20px;
-}
-
-.debit_card_container {
-  display: flex;
-}
-
-.balance_cards:nth-child(2) {
-  background-color: hsl(120, 100%, 25%);
-}
-
-.balance_cards:nth-child(3) {
-  background-color: hsl(300, 100%, 25%);
-} */
-
 .card {
   width: 100%;
   padding: 10px;
@@ -221,4 +177,67 @@ body {
 
 .card-bottom h2 {
   font-weight: 700;
+}
+
+/* QUICK ACTIONS */
+.quick_actions {
+  box-shadow: 1px 1px 1px 1px  grey;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.quick_actions_container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.quick_actions span:nth-child(1) {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.deposit {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  background-color: aliceblue;
+  /* border: 1px solid grey; */
+  outline: none;
+  box-shadow: 1px 1px 1px  grey;
+  border-radius: 10px;
+}
+
+.banking_service_icon {
+  font-size: 35px;
+  padding: 5px;
+
+  border-radius: 5px;
+}
+
+.banking_service_text span {
+  color: gray;
+  font-size: 12px;
+}
+
+.banking_service_icon_one {
+  color: hsl(240, 64%, 53%);
+  background-color: hsl(240, 42%, 72%);
+}
+
+.banking_service_icon_two {
+  background-color: hsl(120, 23%, 75%);
+  color: hsl(120, 100%, 25%);
+}
+
+.banking_service_icon_three {
+  background-color: rgb(172, 68, 172);
+  color: rgb(61, 9, 61);
+}
+
+.banking_service_icon_four {
+  background-color: hsl(39, 29%, 44%);
+  color: hsl(39, 71%, 48%);
 }

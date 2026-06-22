@@ -6,6 +6,9 @@ import { BsEyeFill } from "react-icons/bs";
 import { BiChart, BiHome } from "react-icons/bi";
 import { PiPiggyBank } from "react-icons/pi";
 import { LuNfc } from "react-icons/lu";
+import { GiSave, GiSaveArrow } from "react-icons/gi";
+import { FaArrowDown, FaArrowUp, FaMoneyBill } from "react-icons/fa";
+import { FaArrowRightArrowLeft, FaMoneyBillWheat } from "react-icons/fa6";
 
 export default function App() {
   return (
@@ -67,17 +70,6 @@ export default function App() {
             <span>Naira Account</span>
             <BiChart className={styles.balance_cards_icon} />
           </div>
-
-          {/* <div className={styles.balance_cards}>
-            <p>Savings Balance</p>
-            <span className={styles.balance_cards_amount}>$80,000</span>
-            <p>Naira Savings</p>
-          </div> */}
-          {/* <div className={styles.balance_cards}>
-            <p>Total Income</p>
-            <span className={styles.balance_cards_amount}>$320,000</span>
-            <p>This Month</p>
-          </div> */}
         </div>
 
         <div className={styles.debit_card_container}>
@@ -95,6 +87,56 @@ export default function App() {
               <span>Solomon Israel</span>
               <h2>VISA</h2>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.quick_actions}>
+        <span>Quick Actions</span>
+        <div className={styles.quick_actions_container}>
+          <div className={styles.banking_service}>
+            <button className={styles.deposit}>
+              <FaArrowDown
+                className={`${styles.banking_service_icon} ${styles.banking_service_icon_one}`}
+              />
+              <div className={styles.banking_service_text}>
+                <h4>Deposit</h4>
+                <span>Add money</span>
+              </div>
+            </button>
+          </div>
+          <div className={styles.banking_service}>
+            <button className={styles.deposit}>
+              <FaArrowUp
+                className={`${styles.banking_service_icon} ${styles.banking_service_icon_two}`}
+              />
+              <div className={styles.banking_service_text}>
+                <h4>Withdrawal</h4>
+                <span>Withdraw money</span>
+              </div>
+            </button>
+          </div>
+          <div className={styles.banking_service}>
+            <button className={styles.deposit}>
+              <FaArrowRightArrowLeft
+                className={`${styles.banking_service_icon} ${styles.banking_service_icon_three}`}
+              />
+              <div className={styles.banking_service_text}>
+                <h4>Transfer</h4>
+                <span>Deposit money</span>
+              </div>
+            </button>
+          </div>
+          <div className={styles.banking_service}>
+            <button className={styles.deposit}>
+              <FaMoneyBillWheat
+                className={`${styles.banking_service_icon} ${styles.banking_service_icon_four}`}
+              />
+              <div className={styles.banking_service_text}>
+                <h4>Pay Bills</h4>
+                <span>Make payments</span>
+              </div>
+            </button>
           </div>
         </div>
       </section>
