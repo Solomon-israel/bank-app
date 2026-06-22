@@ -1,7 +1,12 @@
 import styles from "./App.module.css";
 import { TbCircleDashedLetterB } from "react-icons/tb";
 import { RiMenu2Line } from "react-icons/ri";
-import { MdNotificationAdd, MdNoTransfer, MdSavings } from "react-icons/md";
+import {
+  MdNotificationAdd,
+  MdNotifications,
+  MdNoTransfer,
+  MdSavings,
+} from "react-icons/md";
 import { BsEyeFill } from "react-icons/bs";
 import { BiChart, BiHome } from "react-icons/bi";
 import { PiPiggyBank } from "react-icons/pi";
@@ -25,7 +30,7 @@ export default function App() {
         </div>
 
         <div className={styles.header_right}>
-          <MdNotificationAdd />
+          <MdNotifications className={styles.notification_bell} />
           <div className={styles.user_image}>
             <img src="/user-image.png" alt="user" />
           </div>
@@ -46,28 +51,28 @@ export default function App() {
               <p>Current Balance</p>
               <BsEyeFill />
             </div>
-            <p className={styles.acct_num}>$123456789</p>
+            <p className={styles.acct_num}>$250,000.00</p>
             <span>Naira Account</span>
             <BiHome className={styles.balance_cards_icon} />
           </div>
 
           <div className={`${styles.balance_cards} ${styles.card_two}`}>
             <div className={styles.balance_card_top}>
-              <p>Current Balance</p>
+              <p>Savings Balance</p>
               <BsEyeFill />
             </div>
-            <p className={styles.acct_num}>$123456789</p>
-            <span>Naira Account</span>
+            <p className={styles.acct_num}>$80,000.00</p>
+            <span>Savings Account</span>
             <PiPiggyBank className={styles.balance_cards_icon} />
           </div>
 
           <div className={`${styles.balance_cards} ${styles.card_three}`}>
             <div className={styles.balance_card_top}>
-              <p>Current Balance</p>
+              <p>Total Income</p>
               <BsEyeFill />
             </div>
-            <p className={styles.acct_num}>$123456789</p>
-            <span>Naira Account</span>
+            <p className={styles.acct_num}>$320,000.00</p>
+            <span>This month</span>
             <BiChart className={styles.balance_cards_icon} />
           </div>
         </div>

@@ -63,8 +63,12 @@ body {
   gap: 10px;
 }
 
+.notification_bell{
+  font-size: 25px;
+}
+
 .user_image {
-  width: 50px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
@@ -115,6 +119,11 @@ body {
   background: linear-gradient(to top right, #92400e, #d97706, #fbbf24);
 }
 
+.card_one span {
+  width: 150px;
+  display: block;
+}
+
 .card_two {
   background: linear-gradient(
     to top right,
@@ -124,8 +133,18 @@ body {
   );
 }
 
+.card_two span {
+  width: 150px;
+  display: block;
+}
+
 .card_three {
   background: linear-gradient(to top right, #581c87, #9333ea, #c084fc);
+}
+
+.card_three span {
+  width: 150px;
+  display: block;
 }
 
 .card {
